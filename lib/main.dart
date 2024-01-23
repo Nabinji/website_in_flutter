@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_web/MainPage/main_page.dart';
-import 'package:flutter_web/NavBar/navbar.dart';
+import 'package:flutter_web/Food%20Odering%20Website/screen/home_screen.dart';
 
 void main() => runApp(
       const MyApp(),
@@ -14,35 +13,8 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       theme: ThemeData(fontFamily: "Montserrat"),
-      home: const MyHomePage(),
+      home: const HomeScreen(),
     );
   }
 }
-
-class MyHomePage extends StatelessWidget {
-  const MyHomePage({super.key});
-
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-      body: Container(
-        decoration: const BoxDecoration(
-            gradient: LinearGradient(
-                begin: Alignment.centerLeft,
-                end: Alignment.centerRight,
-                colors: [
-              Colors.pink,
-              Colors.deepPurpleAccent,
-            ])),
-        child: const SingleChildScrollView(
-          child: Column(
-            children: [
-              Navbar(),
-              MainPage(),
-            ],
-          ),
-        ),
-      ),
-    );
-  }
-}
+// let's start coding
